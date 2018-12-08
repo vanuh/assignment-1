@@ -40,3 +40,11 @@ li b {
 li b {
     float: right;
 }
+
+/*Fixes Footer*/
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 10px;
+    width: 100%;
+}
