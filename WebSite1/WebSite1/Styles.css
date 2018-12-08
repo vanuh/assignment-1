@@ -33,17 +33,17 @@ li a:hover {
     background-color:navajowhite
 }
 
-/*Defines Contact bar at bottom of page*/
+/*Defines contact bar at bottom of page*/
 footer li {
     display: block;
     padding: 8px;
     color: white;
-    font-size: 12px;
+    font-size: 15px;
     text-decoration: none;
     border-right: 1px solid white;
 }   
 
-li {
+.right {
     float: right;
 }
 
@@ -52,6 +52,7 @@ footer {
     position: fixed;
     left: 0;
     bottom: 0px;
+    right: 5px;
     width: 100%;
     background-color: #4CAF50;
     height: 40px;
@@ -66,6 +67,7 @@ header {
     height: 150px;
     margin-bottom: 20px;
     background-color: #4CAF50;
+
 }
 
 .main-image {
@@ -83,4 +85,16 @@ header {
 
 .center {
     text-align: center;
+}
+
+/*Used for title text*/
+.relative {
+    position: relative;
+    left: 30px;
+}
+
+/*Used for title text*/
+.page-heading {
+    font-family: 'Bauhaus 93','Gill Sans', sans-serif;
+    color: white;
 }
