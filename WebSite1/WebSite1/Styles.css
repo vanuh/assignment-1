@@ -29,24 +29,24 @@ li a:hover {
     background-color:navajowhite
 }
 
-/*Defines Contact bar at bottom of page*/
+/*Defines contact bar at bottom of page*/
 footer li {
     display: block;
     padding: 8px;
     color: white;
-    font-size: 12px;
+    font-size: 15px;
     text-decoration: none;
     border-right: 1px solid white;
 }   
 
-li {
+.right {
     float: right;
 }
 
 /*Fixes Footer*/
 footer {
     position: fixed;
-    left: 0;
+    right: 5px;
     bottom: 10px;
     width: 100%;
     background-color: #4CAF50;
@@ -57,10 +57,15 @@ footer {
     float: left;
 }
 
+.central {
+    text-align: center
+}
+
 header {
     height: 150px;
     margin-bottom: 20px;
     background-color: #4CAF50;
+
 }
 
 .main-image {
@@ -77,4 +82,16 @@ header {
 
 .rcorner {
     border-radius: 50px;
+}
+
+/*Used for title text*/
+.relative {
+    position: relative;
+    left: 30px;
+}
+
+/*Used for title text*/
+.page-heading {
+    font-family: 'Bauhaus 93','Gill Sans', sans-serif;
+    color: white;
 }
