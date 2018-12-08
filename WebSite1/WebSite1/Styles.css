@@ -59,9 +59,7 @@ footer li {
 }   
 
 .right {
-    display: inline-block;
     float: right;
-    width: 100%;
 }
 
 /*Fixes Footer*/
