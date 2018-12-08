@@ -7,6 +7,10 @@ ul {
     background-color: #4CAF50;
 }
 
+header ul {
+    height: 100px;
+}
+
 li:last-child{
     border-right: none;
 }
@@ -20,15 +24,12 @@ li a {
     border-right: 1px solid white;
 }    
 
-li a {
-    float: right;
-}
 li a:hover {
     background-color:navajowhite
 }
 
 /*Defines Contact bar at bottom of page*/
-li b {
+footer li {
     display: block;
     padding: 8px;
     color: white;
@@ -37,7 +38,7 @@ li b {
     border-right: 1px solid white;
 }   
 
-li b {
+li {
     float: right;
 }
 
@@ -47,4 +48,9 @@ footer {
     left: 0;
     bottom: 10px;
     width: 100%;
+}
+
+
+.left {
+    float: left;
 }
