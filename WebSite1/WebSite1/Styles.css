@@ -4,11 +4,11 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #4CAF50;
 }
 
-header ul {
-    height: 100px;
+h1 {
+    font-size: 3em;
+    margin: 2px;
 }
 
 li:last-child{
@@ -48,9 +48,28 @@ footer {
     left: 0;
     bottom: 10px;
     width: 100%;
+    background-color: #4CAF50;
 }
 
 
 .left {
     float: left;
+}
+
+header {
+    height: 150px;
+    margin-bottom: 20px;
+    background-color: #4CAF50;
+}
+
+.main-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: 60%;
+}
+
+.center {
+    text-align: center;
 }
