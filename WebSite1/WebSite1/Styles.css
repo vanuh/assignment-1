@@ -1,9 +1,9 @@
 ﻿/*General list characteristics*/
 ul {
     list-style-type: none;
-    margin: 0;
-    padding-top: 5px;
-    padding-right: 25px;
+    margin: 0px;
+    padding-top: 0px;
+    padding-right: 0px;
     overflow: hidden;
 }
 
@@ -44,7 +44,9 @@ footer li {
 }   
 
 .right {
+    display: inline-block;
     float: right;
+    width: 100%;
 }
 
 /*Fixes Footer*/
@@ -89,12 +91,21 @@ header {
 
 /*Used for title text*/
 .relative {
-    position: relative;
-    left: 30px;
+    display: inline-block;
+    float: left;
+    margin-right: 210px;
+    margin-left: 20px;
 }
 
 /*Used for title text*/
 .page-heading {
     font-family: 'Bauhaus 93','Gill Sans', sans-serif;
     color: white;
+}
+
+.icon {
+    margin-top: 6.25px;
+    padding: 0px;
+    display:inline-block;
+    float: left;
 }
