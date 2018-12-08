@@ -2,7 +2,8 @@
 ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding-top: 5px;
+    padding-right: 25px;
     overflow: hidden;
 }
 
@@ -72,4 +73,8 @@ header {
 
 .center {
     text-align: center;
+}
+
+.rcorner {
+    border-radius: 50px;
 }
