@@ -1,2 +1,42 @@
-﻿body {
+﻿/*General list characteristics*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #4CAF50;
+}
+
+li:last-child{
+    border-right: none;
+}
+   
+/*Defines navigation bar characteristics*/
+li a {
+    display: block;
+    padding: 8px;
+    color: white;
+    text-decoration: none;
+    border-right: 1px solid white;
+}    
+
+li a {
+    float: right;
+}
+li a:hover {
+    background-color:navajowhite
+}
+
+/*Defines Contact bar at bottom of page*/
+li b {
+    display: block;
+    padding: 8px;
+    color: white;
+    font-size: 12px;
+    text-decoration: none;
+    border-right: 1px solid white;
+}   
+
+li b {
+    float: right;
 }
