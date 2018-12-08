@@ -1,13 +1,28 @@
 ﻿/*General list characteristics*/
-ul {
+header ul {
+    display: inline-block;
     list-style-type: none;
     margin: 0px;
     padding-top: 0px;
     padding-right: 0px;
     overflow: hidden;
+    float:right;
+}
+
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding-top: 5px;
+    padding-right: 25px;
+    overflow: hidden;
+}
+
+header p {
+    display:block;
 }
 
 h1 {
+    display:inline-block;
     font-size: 3em;
     margin: 2px;
 }
@@ -22,7 +37,7 @@ li:last-child{
    
 /*Defines navigation bar characteristics*/
 li a {
-    display: block;
+    display: inline-block;
     padding: 8px;
     color: white;
     text-decoration: none;
@@ -94,7 +109,7 @@ header {
     display: inline-block;
     float: left;
     margin-right: 210px;
-    margin-left: 20px;
+    margin-left: 30px;
 }
 
 /*Used for title text*/
