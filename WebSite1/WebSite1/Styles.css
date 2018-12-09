@@ -1,7 +1,15 @@
 ﻿body {
     font-family: Arial;
     padding: 20px;
-    background: #f1f1f1;
+}
+
+/*Sets the background image*/
+#bg {
+    background-image: url("images/background.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /*General list characteristics*/
@@ -50,7 +58,7 @@ li a {
     border-right: 1px solid white;
 }    
 
-li a:hover {
+nav div:hover {
     background-color:navajowhite
 }
 
