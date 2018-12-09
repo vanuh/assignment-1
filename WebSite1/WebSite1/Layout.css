@@ -1,2 +1,16 @@
-﻿body {
+﻿.learnermodule {
+    display: inline-block;
+    text-align: center;
+    background-color: white;
+    width: 90%;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.fakeimg {
+    display: inline-block;
+    text-align: center;
+    background-color: #aaa;
+    width: 90%;
+    padding: 20px;
 }
