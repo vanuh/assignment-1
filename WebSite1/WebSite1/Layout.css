@@ -2,6 +2,7 @@
     display: inline-block;
     text-align: center;
     background-color: white;
+    background-color: rgba(157,166,198,.2);
     width: 90%;
     padding: 20px;
     margin-top: 20px;
@@ -13,6 +14,8 @@
     background-color: #aaa;
     width: 90%;
     padding: 20px;
+    margin-top: 15px;
+    margin-bottom: 50px;
 }
 
 .flex-container {
@@ -32,4 +35,8 @@
 
 .flex-container > div:last-child {
     border-right: none;
+}
+
+.fixed {
+    position: fixed;
 }
