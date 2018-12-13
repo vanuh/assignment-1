@@ -18,6 +18,15 @@
     margin-bottom: 50px;
 }
 
+.realimg {
+    display: inline-block;
+    text-align: center;
+    width: 80%;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
 .flex-container {
     float: right;
     display: flex;
