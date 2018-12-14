@@ -33,3 +33,24 @@ function getNumber() {
         document.getElementById("numberResult").innerHTML = "Congratulations! You are correct!"
     }
 }
+
+/*Asks user for answer to question about combining conditions*/
+function combineVariable() {
+    var userAnswer = prompt("What is needed in an if statement to require that two conditions are true before the block is run? ")
+    /*If user inputs && then they are correct*/
+    if (userAnswer == "&&") {
+        document.getElementById("combineResult").innerHTML = "Congratulations! You are correct!"
+    } else {
+        document.getElementById("combineResult").innerHTML = "Sorry that is not correct. Have a look at the section of if statements if you are stuck!<br />Click the button to try again!"
+    }
+}
+
+function ifStatementQuestion() {
+    var userAnswer = prompt("Type your answer here. Hint: Enter your answer as the section of code which will run")
+    /*If user inputs "sing in the rain" then they are correct*/
+    if (userAnswer.toLowerCase() == "sing in the rain") {
+        document.getElementById("statementResult").innerHTML = "Congratulations! You are correct!"
+    } else {
+        document.getElementById("statementResult").innerHTML = "Sorry that is not correct. Make sure you enter your answer as it appears in the code block (not case sensitive)"
+    }
+}

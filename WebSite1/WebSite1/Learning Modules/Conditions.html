@@ -107,12 +107,20 @@
 
             <div class="learnermodule flex-container">
                 <h1>CONFIRMATION OF KNOWLEDGE</h1>
-                <!--
-    <input type="button" onclick="getString()" value="Click here for the first test!" />
-    <p id="stringResult"></p>
-    <input type="button" onclick="getNumber()" value="Click here for the second test!" />
-    <p id="numberResult"></p>-->
-                <p>DOG MOTHERFUCKER!</p>
+                <p>Answer the following questions to test yourself!</p>
+                <input type="button" onclick="combineVariable()" value="Click here for the first test!" />
+                <p id="combineResult"></p>
+                <p>What would the following block of code result in on a rainy day?</p>
+                <p class="code-block">
+                    if (weather == rainy) {<br />
+                    &emsp; sing in the rain <br />
+                    } else if(weather == windy) {<br />
+                    &emsp;go fly kites<br />
+                    } else {<br />
+                    &emsp;go to sleep<br />}
+                </p>
+                <input class="test-button" type="button" onclick="ifStatementQuestion()" value="Click here to answer the question!" />
+                <p id="statementResult"></p>
             </div>
         </div>
     </section>
