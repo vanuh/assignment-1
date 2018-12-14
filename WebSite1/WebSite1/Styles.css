@@ -9,11 +9,7 @@ body {
 
 /*Sets the background image*/
 #bg {
-    background-image: url("images/background.jpg");
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #e6f2ff;
 }
 
 /*General list characteristics*/

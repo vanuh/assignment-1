@@ -18,6 +18,10 @@
     margin-bottom: 5px;
 }
 
+.lastimg {
+    margin-bottom: 50px;
+}
+
 .header-container {
     float: right;
     display: flex;
@@ -50,14 +54,6 @@
     height: auto;
 }
 
-/*Defines contact bar at bottom of page*/
-footer li {
-    display: block;
-    padding: 8px;
-    color: white;
-    font-size: 15px;
-    text-decoration: none;
-}
 
 /*Fixes Footer*/
 footer {
@@ -70,10 +66,22 @@ footer {
     height: 40px;
 }
 
+/*Defines contact bar at bottom of page*/
+footer li {
+    display: block;
+    padding: 8px;
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+
+
+/*Stylises the vertical navigation menu*/
 .vertical-menu {
     background-color: #4CAF50;
     display: inline-block;
-    float: left;
+    float: right;
     width: 11%;
     border: 3px solid green;
 }
@@ -99,3 +107,4 @@ footer {
 .vertical-menu a:hover {
     background-color: navajowhite;
 }
+/*End of vertical nav menu*/
