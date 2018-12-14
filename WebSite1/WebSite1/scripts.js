@@ -34,6 +34,7 @@ function getNumber() {
     }
 }
 
+
 /*Asks user for answer to question about combining conditions*/
 function combineVariable() {
     var userAnswer = prompt("What is needed in an if statement to require that two conditions are true before the block is run? ")
@@ -54,3 +55,4 @@ function ifStatementQuestion() {
         document.getElementById("statementResult").innerHTML = "Sorry that is not correct. Make sure you enter your answer as it appears in the code block (not case sensitive)"
     }
 }
+
