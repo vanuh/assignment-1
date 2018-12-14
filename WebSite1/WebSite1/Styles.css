@@ -13,15 +13,6 @@
 }
 
 /*General list characteristics*/
-header ul {
-    display: inline-block;
-    list-style-type: none;
-    margin: 0px;
-    padding-top: 0px;
-    padding-right: 0px;
-    overflow: hidden;
-    float:right;
-}
 
 footer ul {
     list-style-type: none;
@@ -52,10 +43,8 @@ li:last-child{
 /*Defines navigation bar characteristics*/
 li a {
     display: inline-block;
-    padding: 8px;
     color: white;
     text-decoration: none;
-    border-right: 1px solid white;
 }    
 
 nav div:hover {
