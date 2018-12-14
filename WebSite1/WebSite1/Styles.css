@@ -120,3 +120,13 @@ header {
     padding: 20px;
     margin-top: 20px;
 }
+
+/*Stylises the test buttons*/
+.learnermodule input {
+    background-color: #4CAF50;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+}
