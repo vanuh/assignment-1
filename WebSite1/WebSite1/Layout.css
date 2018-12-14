@@ -108,3 +108,9 @@ footer li {
     background-color: navajowhite;
 }
 /*End of vertical nav menu*/
+
+
+/*adds small amount of space around the knowledge confirmation buttons*/
+.test-button {
+    margin: 10px;
+}
