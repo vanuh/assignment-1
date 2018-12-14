@@ -6,6 +6,7 @@
     <title>JavaScript 123! | Data Types</title>
     <link rel="stylesheet" type="text/css" href="../Styles.css" />
     <link rel="stylesheet" type="text/css" href="../Layout.css" />
+    <script src="../scripts.js"></script>
 </head>
 <body id="bg">
     <header class="rcorner">
@@ -79,7 +80,13 @@
                 </p>
             </div>
             <div><h1>CONFIRMATION OF KNOWLEDGE</h1></div>
-            <div class="learnermodule">DOG</div>
+            <div class="learnermodule flex-container">
+                <input type="button" onclick="getString()" value="Click here for the first test!"/>
+                <p id="stringResult"></p>
+                <input type="button" onclick="getNumber()" value="Click here for the second test!" />
+                <p id="numberResult"></p>
+
+            </div>
         </div>
     </section>
     <section class="center">
