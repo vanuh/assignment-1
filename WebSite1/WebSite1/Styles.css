@@ -116,12 +116,10 @@ header {
 
 /*Learner page flex container styling*/
 .learnermodule {
-    display: inline-block;
     text-align: center;
     background-color: white;
     background-color: rgba(157,166,198,.2);
     width: 60%;
     padding: 20px;
     margin-top: 20px;
-    justify-content: center;
 }
