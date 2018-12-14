@@ -1,12 +1,11 @@
-<<<<<<< HEAD
 //Variables learner module function//
 function variablecorrect(input) {
-    if (input.startsWith('var myfirstvariable =') == true);
-        return "Correct";
-    }   else {
-        return "Incorrect. Try Again";
+    if (input.startsWith('var myfirstvariable =') == true) {
+        return document.write("Correct")
+    } else {
+        return document.write("Incorrect. Try Again")  
+    }
 }
-=======
 function getString() {
     var userAnswer = prompt("Make the following variable a string: var thisIsAString = ")
     if ((userAnswer.substr(0, 1) == '\"' && userAnswer.substr(-1) == '\"') || (userAnswer.substr(0,1) == '\'' && userAnswer.substr(-1)) == '\'') {
@@ -25,4 +24,3 @@ function getNumber() {
         document.getElementById("numberResult").innerHTML = "Congratulations! You are correct!"
     }
 }
->>>>>>> 5b7ffeb745b93467b24d5b859a592fde3b99fb85
