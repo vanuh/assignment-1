@@ -49,3 +49,9 @@
 .fixed {
     position: fixed;
 }
+
+#creators {
+    margin-bottom: 25px;
+    width: 37.5%;
+    height: auto;
+}

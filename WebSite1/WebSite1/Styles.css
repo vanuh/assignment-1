@@ -135,3 +135,8 @@ header {
     display:inline-block;
     float: left;
 }
+
+/*Used to style text on home page*/
+#main-text {
+    font-size: 24px;
+}
