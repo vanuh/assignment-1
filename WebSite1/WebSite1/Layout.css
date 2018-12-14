@@ -27,13 +27,13 @@
     margin-bottom: 5px;
 }
 
-.flex-container {
+.header-container {
     float: right;
     display: flex;
     flex-direction: row;
 }
 
-.flex-container > div {
+.header-container > div {
     width: 125px;
     height: 125px;
     margin-top:5px;
@@ -42,16 +42,33 @@
     border-right: 2px solid white;
 }
 
-.flex-container > div:last-child {
+.header-container > div:last-child {
     border-right: none;
-}
-
-.fixed {
-    position: fixed;
 }
 
 #creators {
     margin-bottom: 25px;
     width: 37.5%;
     height: auto;
+}
+
+/*Defines contact bar at bottom of page*/
+footer li {
+    display: block;
+    padding: 8px;
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+    border-right: 1px solid white;
+}
+
+/*Fixes Footer*/
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0px;
+    right: 5px;
+    width: 100%;
+    background-color: #4CAF50;
+    height: 40px;
 }

@@ -62,30 +62,11 @@ nav div:hover {
     background-color:navajowhite
 }
 
-/*Defines contact bar at bottom of page*/
-footer li {
-    display: block;
-    padding: 8px;
-    color: white;
-    font-size: 15px;
-    text-decoration: none;
-    border-right: 1px solid white;
-}   
 
 .right {
     float: right;
 }
 
-/*Fixes Footer*/
-footer {
-    position: fixed;
-    left: 0;
-    bottom: 0px;
-    right: 5px;
-    width: 100%;
-    background-color: #4CAF50;
-    height: 40px;
-}
 
 
 .left {
