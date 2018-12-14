@@ -1,27 +1,41 @@
-﻿.learnermodule {
-    display: inline-block;
-    text-align: center;
-    background-color: white;
-    width: 90%;
-    padding: 20px;
-    margin-top: 20px;
-}
-
+﻿
 .fakeimg {
     display: inline-block;
     text-align: center;
     background-color: #aaa;
     width: 90%;
     padding: 20px;
+    margin-top: 15px;
+    margin-bottom: 50px;
 }
 
-.flex-container {
+.realimg {
+    display: inline-block;
+    text-align: center;
+    width: 80%;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.lastimg {
+    margin-bottom: 50px;
+}
+
+.header-container {
     float: right;
     display: flex;
     flex-direction: row;
 }
 
-.flex-container > div {
+/*Learner page layout*/
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.header-container > div {
     width: 125px;
     height: 125px;
     margin-top:5px;
@@ -30,6 +44,67 @@
     border-right: 2px solid white;
 }
 
-.flex-container > div:last-child {
+.header-container > div:last-child {
     border-right: none;
 }
+
+#creators {
+    margin-bottom: 25px;
+    width: 37.5%;
+    height: auto;
+}
+
+
+/*Fixes Footer*/
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0px;
+    right: 5px;
+    width: 100%;
+    background-color: #4CAF50;
+    height: 40px;
+}
+
+/*Defines contact bar at bottom of page*/
+footer li {
+    display: block;
+    padding: 8px;
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+
+
+/*Stylises the vertical navigation menu*/
+.vertical-menu {
+    background-color: #4CAF50;
+    display: inline-block;
+    float: right;
+    width: 11%;
+    border: 3px solid green;
+}
+
+.vertical-menu a{
+    display: block;
+    color: white;
+    margin-left: 10px;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 14px;
+    text-align: justify;
+}
+
+.vertical-menu p {
+    display: block;
+    color: white;
+    text-decoration: underline;
+    margin: 5px;
+    font-size: 18px;
+    text-align: center;
+}
+.vertical-menu a:hover {
+    background-color: navajowhite;
+}
+/*End of vertical nav menu*/
