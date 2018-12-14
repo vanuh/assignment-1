@@ -130,3 +130,12 @@ header {
     cursor: pointer;
     border: none;
 }
+
+.code-block {
+    text-align: justify;
+    text-align-last: left;
+    margin: 0 auto;
+    width: 30em;
+    background-color: grey;
+    color: white;
+}
