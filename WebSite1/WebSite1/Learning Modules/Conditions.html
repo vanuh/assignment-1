@@ -6,6 +6,7 @@
     <title>JavaScript 123! | Conditions</title>
     <link rel="stylesheet" type="text/css" href="../Styles.css" />
     <link rel="stylesheet" type="text/css" href="../Layout.css" />
+    <script src="../scripts.js"></script>
 </head>
 <body id="bg">
     <header class="rcorner">
@@ -40,12 +41,82 @@
         <a href="../Learning Modules/Conditions.html">Conditions</a>
         <a href="../Learning Modules/Functions.html">Functions</a>
     </nav>
+
+    <!--Section to include all learning material for conditions-->
     <section class="center">
-        <p class="learnermodule">
-            Conditional statements within JavaScript are indicators which tell the code to perform certain actions if a particular condition is met.
-            Examples of these conditions include if and else statements. For example, if A is True (the condition for A is met), then B should happen. Else, C should happen.
-        </p>
+        <div class="flex-container learnermodule">
+
+            <div>
+                <h1>UNDERSTAND</h1>
+                <p>
+                    Developers use conditions in JavaScript when a decision is required in the code. We make decisions all the time in our day to day lives. An example of this could be something like the 
+                    following: If it is a sunny day today I will go to the beach. To write decisions in code we use if, else and else if statements.
+                </p>
+            </div>
+
+            <div>
+                <h1>LEARN</h1>
+                <h2>If Statement</h2>
+                <p>
+                    The if statement is used to evaluate whether a condition is true or false. If it is true then the following code block will be executed, if it is false it will not be executed. Using our example
+                    from earlier we can turn our personal decision into a code block.
+                </p>
+                <p class="code-block">
+                    if(weather == sunny) {<br />
+                    &emsp;go to the beach<br />
+                    }<br />
+                </p>
+                <p>
+                    With this example if the weather is not sunny nothing will happen but if it is sunny we will go to the beach. Try and think of some other decisions you have made recently and see if you can write them
+                    out in code versions. We can also combine multiple conditions in one if statement by using && / || operators. These require both or either condition to be true respectively for the code to run.
+                    The following is an example of the && operator.
+                </p>
+                <p class="code-block">
+                    if(weather == sunny && windSpeed != windy) {<br />
+                    &emsp;go to the beach<br />
+                    }
+                </p>
+                <p>This will only run if the weather is sunny and it is also not windy.</p>
+                <h2>Else Statements</h2>
+                <p>
+                    Sometimes multiple outcomes to a decision are required. By using the else statement we can tell the program that when the if statement's condition is not met, do another option. 
+                    Going back to our earlier example we could say that if the weather is not sunny, instead we will go to the movies. Lets take a look at how this would appear in a code block.
+                </p>
+                <p class="code-block">
+                    if(weather == sunny) {<br />
+                    &emsp;go to the beach<br />
+                    } else {<br />
+                    &emsp; go to the movies<br />}
+                </p>
+                <h2>Else If</h2>
+                <p>
+                    Sometimes we want to be able to evaluate multiple conditions and run different code blocks depending on which is true. To do this we can use the else if statement. This means that if the 
+                    previous if statement is false it will evaluate another condition and if that is true run a different block. Let us take a look at an example.
+                </p>
+                <p class="code-block">
+                    if (weather == sunny) {<br />
+                    &emsp; go to the beach <br />
+                    } else if(weather == windy) {<br />
+                    &emsp;go fly kites<br />
+                    } else {<br />
+                    &emsp;go to the movies<br />}
+                </p>
+                <p>This code block will result in going to the beach on a sunny day, flying kites on a windy day, and going to the movies any other time. We can add as many else if statements as needed as well as 
+                combining as many and/or operators as we want.</p>
+            </div>
+
+            <div class="learnermodule flex-container">
+                <h1>CONFIRMATION OF KNOWLEDGE</h1>
+                <!--
+    <input type="button" onclick="getString()" value="Click here for the first test!" />
+    <p id="stringResult"></p>
+    <input type="button" onclick="getNumber()" value="Click here for the second test!" />
+    <p id="numberResult"></p>-->
+                <p>DOG MOTHERFUCKER!</p>
+            </div>
+        </div>
     </section>
+
     <footer>
         <ul>
             <li class="left"><a href="asd">Contact us</a></li>

@@ -9,7 +9,7 @@ body {
 
 /*Sets the background image*/
 #bg {
-    background-color: #e6f2ff;
+    background-color: hsl(209, 100%, 85%);
 }
 
 /*General list characteristics*/
@@ -129,4 +129,13 @@ header {
     font-size: 16px;
     cursor: pointer;
     border: none;
+}
+
+.code-block {
+    text-align: justify;
+    text-align-last: left;
+    margin: 0 auto;
+    width: 30em;
+    background-color: grey;
+    color: white;
 }
