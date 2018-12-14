@@ -1,13 +1,4 @@
-﻿.learnermodule {
-    display: inline-block;
-    text-align: center;
-    background-color: white;
-    background-color: rgba(157,166,198,.2);
-    width: 90%;
-    padding: 20px;
-    margin-top: 20px;
-}
-
+﻿
 .fakeimg {
     display: inline-block;
     text-align: center;
@@ -31,6 +22,12 @@
     float: right;
     display: flex;
     flex-direction: row;
+}
+
+/*Learner page layout*/
+.flex-container {
+    display: flex;
+    flex-direction: column;
 }
 
 .header-container > div {
