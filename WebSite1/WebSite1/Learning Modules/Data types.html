@@ -6,6 +6,7 @@
     <title>JavaScript 123! | Data Types</title>
     <link rel="stylesheet" type="text/css" href="../Styles.css" />
     <link rel="stylesheet" type="text/css" href="../Layout.css" />
+    <script src="../scripts.js"></script>
 </head>
 <body id="bg">
     <header class="rcorner">
@@ -41,6 +42,53 @@
         <a href="../Learning Modules/Conditions.html">Conditions</a>
         <a href="../Learning Modules/Functions.html">Functions</a>
     </nav>
+    <section class="center">
+        <div class="flex-container learnermodule">
+            <div><h1>UNDERSTAND</h1></div>
+            <div>
+                Following on from the lesson on variables we will look at the some different data types that can be held in variables. These can include numbers, strings, and booleans. Strings must be entered
+                within quotation marks while numbers can be entered on their own. Boolean data types return a true or false value. Variables can contain one type of data and later contain another type of
+                data depending on what is entered<br /><br />
+            </div>
+            <div><h1>LEARN</h1></div>
+            <div>
+                <h2>Numbers</h2>
+                <p>The number data type can be used to input numbers with or without decimals. Different mathematical operations can then be used on the numbers to manipulate them further. 
+                Numbers can also be written with scientific notation to make managing large numbers easier.</p>
+                <p>
+                    For example:<br />
+                    var intNum = 10; // 10 without decimals<br />
+                    var floatNum = 10.00; // with decimals<br />
+                    var hugeNum = 10e5; // Returns 1000000<br />
+                    var x = intNum * 5; // Returns 50 in this case
+                </p>
+                <h2>Strings</h2>
+                <p>Strings must be entered using quotation marks and are used to store and manipulate text. You can use either single or double quotes.</p>
+                <p>
+                    For example:<br />
+                    var doubleQuotes = "Hello world!" // Hello world!<br />
+                    var singleQuotes = 'Hello world!' // Hello world!<br />
+                </p>
+                <h2>Booleans</h2>
+                <p>Booleans are variables that return a true or false value. True means that something is correct and false means it is incorrect. A variable can be set to a boolean or a comparison
+                can be used to return a boolean.</p>
+                <p>
+                    For example:<br />
+                    var isTrue = true; // True<br />
+                    var lessThan = 5 < 50 // True (The comparison result is correct as 5 is smaller than 50)<br />
+                    var isFalse = 5 > 50 // False (The comparison result is incorrect as 5 is not larger than 50)
+                </p>
+            </div>
+            <div><h1>CONFIRMATION OF KNOWLEDGE</h1></div>
+            <div class="learnermodule flex-container">
+                <input type="button" onclick="getString()" value="Click here for the first test!"/>
+                <p id="stringResult"></p>
+                <input type="button" onclick="getNumber()" value="Click here for the second test!" />
+                <p id="numberResult"></p>
+
+            </div>
+        </div>
+    </section>
     <section class="center">
         <p class="learnermodule">JavaScript contains many different kinds of Data-types can be stored by variables. Some examples include Numbers, Strings, Objects and Lists.</p>
     </section>
