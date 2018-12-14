@@ -1,9 +1,11 @@
 //Variables learner module function//
-function variablecorrect(input) {
-    if (input.startsWith('var myfirstvariable =') == true) {
-        return document.write("Correct")
+function variablecorrect() {
+    var userAnswer = prompt("Make the following variable a string: var thisIsAString = ")
+    /*Checks if the user has started their string with correct quotation marks*/
+    if (userAnswer.startsWith('var myfirstvariable =')) {
+        document.getElementById("variableResult").innerHTML = "Congratulations! This is a correct variable!"
     } else {
-        return document.write("Incorrect. Try Again")  
+        document.getElementById("variableResult").innerHTML = "That is not the correct format for a variable. Go over the examples till your are confident, then try again!"
     }
 }
 

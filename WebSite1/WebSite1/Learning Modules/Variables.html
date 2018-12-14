@@ -6,7 +6,7 @@
     <title>JavaScript 123! | Variables</title>
     <link rel="stylesheet" type="text/css" href="../Styles.css" />
     <link rel="stylesheet" type="text/css" href="../Layout.css" />
-    <script src="scripts.js"></script>
+    <script src="../scripts.js"></script>
 </head>
 <body id="bg">
     <header class="rcorner">
@@ -71,12 +71,10 @@
                 <br />
             </div>
             <div><h1>CONFIRMATION OF KNOWLEDGE</h1></div>
-                <h2>To confirm what has been learned, type a variable with the name myfirstvariable. The answer must include spaces between each of the variable elements as in the examples above...</h2>
-                <input type='text' id="userinput" value= 'Enter variable here...' onfocus='this.value = ""' />
-                <script> var input = document.getElementById("userinput");
-                    variablecorrect(input)  
-                </script>
-                <div class="learnermodule">DOG</div>
+            <h2>To confirm what has been learned, type a variable with the name myfirstvariable. The data stored in the variable can be anything you like! 
+            The answer must include spaces between each of the variable elements as in the examples above...</h2>
+            <input type="button" onclick="variablecorrect()" value="Click here to begin your test!" />
+            <p id="variableResult"></p>
         </div>
     </section>
     <footer>
