@@ -67,13 +67,16 @@ function sliceString() {
     }
 }
 
+/*function to test users knowledge of string methods*/
 function getGlobal() {
     var userAnswer = prompt("Type your answer here.")
     if (userAnswer == "/g") {
         document.getElementById("globalResult").innerHTML = "Congratulations! You are correct!"
     } else {
         document.getElementById("globalResult").innerHTML = "Sorry that is not correct. Click to try again!"
-        
+    }
+}
+    
 //Variables learner module function//
 function loopcorrect() {
     var userAnswer = prompt("Write your answer in the following input box:")
@@ -82,5 +85,15 @@ function loopcorrect() {
         document.getElementById("variableResult").innerHTML = "Congratulations! You are correct!"
     } else {
         document.getElementById("variableResult").innerHTML = "That is not correct, try again!"
+    }
+}
+
+/*function to test users knowledge of functions*/
+function localVarTest() {
+    var userAnswer = prompt("Type your answer here.")
+    if (userAnswer == "False") {
+        document.getElementById("localVarResult").innerHTML = "Congratulations! You are correct!"
+    } else {
+        document.getElementById("localVarResult").innerHTML = "Sorry that is not correct. Read over the section on local variables to ensure you understand this."
     }
 }
