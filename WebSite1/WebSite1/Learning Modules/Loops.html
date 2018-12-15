@@ -47,8 +47,8 @@
 
             <div>
                 <h1>UNDERSTAND</h1>
-                <p class="learnermodule">
-                    Loops are tools which allow us to repeat the actions of a piece of code without writing it additional times.
+                <p>
+                    Loops are tools which allow us to repeat the actions of a piece of code without writing code additional times.
                 </p>
             </div>
 
@@ -75,12 +75,9 @@
                     }
                     <br />
                 </p>
-
-
-                </p>
                 <h2>While Loops</h2>
                 <p>
-                    While loops are loops which repeat continuiosly while a condition is true. The elements of a While loop can be seen in the code block below.
+                    While loops are loops which repeat continuously while a condition is true. The elements of a While loop can be seen in the code block below.
                 </p>
                 <p class="code-block">
                     while (condition) {<br />
@@ -100,20 +97,37 @@
                     }<br />
                     <br />
                 </p>
+                <br />
             </div>
 
             <div class="learnermodule flex-container">
                 <h1>CONFIRMATION OF KNOWLEDGE</h1>
                 <p>How many times would the following block of code repeat?</p>
-                <p id="variableResult"></p>
                 <p class="code-block">
                     var text = ""<br />
                     var i;<br />
                     for (i = 0; i < 10; i++) {<br>
-                    &emsp;text += "I like pie number " + i + "<br />";
+                    &emsp;text += "I like pie number " + i + "";
                     }
                     <br />
-                    <input type="button" onclick="loopcorrect()" value="Click here to answer" />
+                </p>
+                <br />
+                <input type="button" onclick="loopcorrect()" value="Click here to answer" />
+                <p id="variableResult"></p>
+                <br />
+                <p>What will the output of the following loop be?</p>
+                <p class="code-block">
+                    var magicword = ["Abra", "Kadabra", "Alakazam"];<br />
+                    var i = 0;<br />
+                    var text = "";<br />
+                    while (magicword[i]) {<br />
+                    &emsp;text += magicword[i] + " ";<br>
+                    &emsp;i++;<br />
+                    }<br />
+                </p>
+                <br />
+                <input type="button" onclick="ForLoop()" value="Click here to find out!" />
+                <p id="Looper"></p>
             </div>
         </div>
     </section>

@@ -66,3 +66,14 @@ function loopcorrect() {
         document.getElementById("variableResult").innerHTML = "That is not correct, try again!"
     }
 }
+
+function ForLoop() {
+    var magicword = ["Abra", "Kadabra", "Alakazam"];
+    var i = 0;
+    var text = "";
+    while (magicword[i]) {
+        text += magicword[i] + "<br>";
+        i++;
+    }
+    document.getElementById("Looper").innerHTML = text
+}
