@@ -48,7 +48,8 @@ li a {
 }    
 
 nav div:hover {
-    background-color:navajowhite
+    background-color: navajowhite;
+    border-radius: 50px;
 }
 
 
