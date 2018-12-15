@@ -136,6 +136,7 @@ header {
     text-align: justify;
     text-align-last: left;
     margin: 0 auto;
+    margin-bottom: 10px;
     width: 30em;
     background-color: grey;
     color: white;

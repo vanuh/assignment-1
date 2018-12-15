@@ -6,6 +6,7 @@
     <title>JavaScript 123! | Strings</title>
     <link rel="stylesheet" type="text/css" href="../Styles.css" />
     <link rel="stylesheet" type="text/css" href="../Layout.css" />
+    <script src="../scripts.js"></script>
 </head>
 <body id="bg">
     <header class="rcorner">
@@ -40,10 +41,90 @@
         <a href="../Learning Modules/Conditions.html">Conditions</a>
         <a href="../Learning Modules/Functions.html">Functions</a>
     </nav>
+    <!--Section to include all learning material for strings-->
     <section class="center">
-        <p class="learnermodule">
-            Cats love strings
-        </p>
+        <div class="flex-container learnermodule">
+            <div>
+                <h1>UNDERSTAND</h1>
+                <p>
+                    This will be a brief overview of strings to get you started. Strings are a very large topic so we will only be discussing some of the main ideas here.<br /><br />
+                </p>
+            </div>
+            <div>
+                <h1>LEARN</h1>
+                <h2>Strings</h2>
+                <p>
+                    The use of strings is very important as they allow us to store textual data instead of just using
+                    numbers. Javascript strings are defined using quotes to surround the text. It is important to note that both single and double quotation marks can be used as 
+                    long as the same one is used to start and end the string. This comes in handy as it lets us use quotation marks within the string as well. Lets look at some examples.
+                </p>
+                <p class="code-block">
+                    var doubleQuoteString = "I am a string using double quotation marks"<br /><br />
+                    var singleQuoteString = 'I am a string using single quotation marks'<br /><br />
+                    var quoteString = "This 'string' uses single quotes inside it to emphasise the word string"
+                </p>
+                <h2>Escape Characters</h2>
+                <p>Because strings must be enclosed within quotes some strings will be misunderstood by javascript. For example: var x = "They called him "tough" but really he was terrified" would be chopped to
+                "They called him" because of the double quotes inside the string. To avoid this we can escape characters by using the backslash. \' will result in ', \" will result in " and \\ will result in \.
+                Lets take a look at some more examples:</p>
+                <p class="code-block">
+                    var x = 'It\'s okay.' // It's okay.<br /><br />
+                    var y = 'It's okay.' // It
+                </p>
+                <h2>String Methods</h2>
+                <h3>String Length</h3>
+                <p>Here we will look at some basic methods we can use on strings to return information about them. The first one we will look at is string length. This property returns the length of a string which
+                tells us how many characters are in a string. Lets look at a quick example.</p>
+                <p class="code-block">
+                    var str = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";<br /><br />
+                    var stringLength = str.length; // Returns 26 as there are 26 letters in the string of the alphabet.
+                </p>
+                <h3>Slice String</h3>
+                <p>
+                    The next method we will look at is the slice method. This allows us to specify a starting index and the ending index and take out a portion of the string between those positions. If you 
+                    do not specify a second parameter it will slice from the starting index to the end of the string. It is important to note that the first character of a string is at index 0.
+                    Another point to note is that it will not include the last index. Lets look at some examples:
+                </p>
+                <p class="code-block">
+                    var str = "Frog, Lemur, Giraffe";<br /><br />
+                    var strLemur = str.slice(6,11); // Value will be Lemur<br /><br />
+                    var strFrog = str.slice(0,4); // Value will be frog. Note that it does not include the character at index 4 which would be a comma.<br /><br />
+                    var strLemurGiraffe = str.slice(6); // Value will be Lemur, Giraffe
+                </p>
+                <h3>Replace Method</h3>
+                <p>
+                    The last method we will look at in this lesson is the replace() method. This lets us replace a specified value in a string with a new value. By default the method will only replace the first match and
+                    is case sensitive however there are ways to manipulate that. Let us look at some examples:
+                </p>
+                <p class="code-block">
+                    var str = "Welcome to TerribleJavaScript! Learning made easy!";<br /><br />
+                    var betterStr = str.replace("TerribleJavaScript", "JavaScript 1,2,3);
+                </p>
+                <p>
+                    This will replace the word TerribleJavaScript with JavaScript 1,2,3. But what if our string was longer and had the competitions name in it multiple times such as "TerribleJavaScript is the best place to
+                    learn JS! Come to TerribleJavaScript for all your JS needs!". In its current form the method would only replace the first instance of the word. Luckily for us we can use a global match flag /g.
+                    That looks like the following:
+                </p>
+                <p class="code-block">
+                    var str = "TerribleJavaScript is the best place to learn JS! Come to TerribleJavaScript for all your JS needs!";<br /><br />
+                    var betterStr = str.replace(/TerribleJavaScript/g, "JavaScript 1,2,3);
+                </p>
+                <p>This would replace all the instances of our competitors name! Note the absense of quotes when using the /g flag.</p>
+            </div>
+            <div class="learnermodule flex-container">
+                <h1>CONFIRMATION OF KNOWLEDGE</h1>
+                <p>What would be the value of the variable slicedString in the code segment below?</p>
+                <p class="code-block">
+                    var str = "Frog, Lemur, Giraffe";<br /><br />
+                    var slicedString = str.slice(13,20);<br />
+                </p>
+                <input type="button" onclick="sliceString()" value="Click here to answer the first question!" />
+                <p id="sliceResult"></p>
+                <p>What do we use to ensure the replace method picks up all occurences of the phrase/word we want to replace?</p>
+                <input type="button" onclick="getGlobal()" value="Click to answer the question" />
+                <p id="globalResult"></p>
+            </div>
+        </div>
     </section>
     <footer>
         <ul>

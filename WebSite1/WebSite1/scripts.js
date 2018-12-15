@@ -45,6 +45,7 @@ function combineVariable() {
     }
 }
 
+/*function to test users knowledge of condition statements*/
 function ifStatementQuestion() {
     var userAnswer = prompt("Type your answer here. Hint: Enter your answer as the section of code which will run")
     /*If user inputs "sing in the rain" then they are correct*/
@@ -52,5 +53,25 @@ function ifStatementQuestion() {
         document.getElementById("statementResult").innerHTML = "Congratulations! You are correct!"
     } else {
         document.getElementById("statementResult").innerHTML = "Sorry that is not correct. Make sure you enter your answer as it appears in the code block (not case sensitive)"
+    }
+}
+
+/*function to test users knowledge of string methods*/
+function sliceString() {
+    var userAnswer = prompt("Type your answer here.")
+    /* If user inputs Giraffe then answer is correct*/
+    if (userAnswer == "Giraffe") {
+        document.getElementById("sliceResult").innerHTML = "Congratulations! You are correct!"
+    } else {
+        document.getElementById("sliceResult").innerHTML = "Sorry that is not correct. Click to try again!"
+    }
+}
+
+function getGlobal() {
+    var userAnswer = prompt("Type your answer here.")
+    if (userAnswer == "/g") {
+        document.getElementById("globalResult").innerHTML = "Congratulations! You are correct!"
+    } else {
+        document.getElementById("globalResult").innerHTML = "Sorry that is not correct. Click to try again!"
     }
 }
