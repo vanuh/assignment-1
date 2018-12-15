@@ -1,6 +1,6 @@
 //Variables learner module function//
 function variablecorrect() {
-    var userAnswer = prompt("Make the following variable a string: var thisIsAString = ")
+    var userAnswer = prompt("Write your answer in the following input box:")
     /*Checks if the user has started their string with correct quotation marks*/
     if (userAnswer.startsWith('var myfirstvariable =')) {
         document.getElementById("variableResult").innerHTML = "Congratulations! This is a correct variable!"
@@ -73,5 +73,14 @@ function getGlobal() {
         document.getElementById("globalResult").innerHTML = "Congratulations! You are correct!"
     } else {
         document.getElementById("globalResult").innerHTML = "Sorry that is not correct. Click to try again!"
+        
+//Variables learner module function//
+function loopcorrect() {
+    var userAnswer = prompt("Write your answer in the following input box:")
+    /*Checks if the user has started their string with correct quotation marks*/
+    if (userAnswer == "10") {
+        document.getElementById("variableResult").innerHTML = "Congratulations! You are correct!"
+    } else {
+        document.getElementById("variableResult").innerHTML = "That is not correct, try again!"
     }
 }
