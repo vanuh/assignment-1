@@ -1,11 +1,11 @@
 //Variables learner module function//
 function variablecorrect() {
-    var userAnswer = prompt("Make the following variable a string: var thisIsAString = ")
-    /*Checks if the user has started their string with correct quotation marks*/
+    var userAnswer = prompt("Type your first variable here")
+    /*Checks if the user has the correct variable formatting*/
     if (userAnswer.startsWith('var myfirstvariable =')) {
         document.getElementById("variableResult").innerHTML = "Congratulations! This is a correct variable!"
     } else {
-        document.getElementById("variableResult").innerHTML = "That is not the correct format for a variable. Go over the examples till your are confident, then try again!"
+        document.getElementById("variableResult").innerHTML = "That is not the correct format for a variable. Go over the examples until you are confident, then try again!"
     }
 }
 
@@ -33,7 +33,6 @@ function getNumber() {
         document.getElementById("numberResult").innerHTML = "Congratulations! You are correct!"
     }
 }
-<<<<<<< HEAD
 
 /*Asks user for answer to question about combining conditions*/
 function combineVariable() {
@@ -55,5 +54,3 @@ function ifStatementQuestion() {
         document.getElementById("statementResult").innerHTML = "Sorry that is not correct. Make sure you enter your answer as it appears in the code block (not case sensitive)"
     }
 }
-=======
->>>>>>> f1105da2c3d42259a226ff2f4d046b44c9e2cf96
