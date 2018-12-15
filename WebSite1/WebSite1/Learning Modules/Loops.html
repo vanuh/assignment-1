@@ -6,6 +6,7 @@
     <title>JavaScript 123! | Loops</title>
     <link rel="stylesheet" type="text/css" href="../Styles.css" />
     <link rel="stylesheet" type="text/css" href="../Layout.css" />
+    <script src="../scripts.js"></script>
 </head>
 <body id="bg">
     <header class="rcorner">
@@ -40,8 +41,81 @@
         <a href="../Learning Modules/Conditions.html">Conditions</a>
         <a href="../Learning Modules/Functions.html">Functions</a>
     </nav>
+    <!--Section to include all learning material for conditions-->
     <section class="center">
-        <p class="learnermodule">Loops are tools which allow us to repeat the actions of a piece of code without writing it additional times.</p>
+        <div class="flex-container learnermodule">
+
+            <div>
+                <h1>UNDERSTAND</h1>
+                <p class="learnermodule">
+                    Loops are tools which allow us to repeat the actions of a piece of code without writing it additional times.
+                </p>
+            </div>
+
+            <div>
+                <h1>LEARN</h1>
+                <h2>For Loops</h2>
+                <p>
+                    For loops are loops which repeat until a specified condition is evaluated as false. The elements of a For loop can be seen in the code block below.
+                </p>
+                <p class="code-block">
+                    for ([initialExpression]; [condition]; [incrementExpression])<br />
+                    &emsp;statement<br />
+                    <br />
+                </p>
+                <p>
+                    Below is an example of a For Loop which prints the term 'This is loop number i' the number of times specified in the condition, where i indicates what loop has occurred.
+                    As the condition is set to 'i is less than 5', this code will loop 5 times.
+                </p>
+                <p class="code-block">
+                    var text = ""<br />
+                    var i;<br />
+                    for (i = 0; i < 5; i++) { &emsp;&emsp;//Dictates the code is repeated 5 times<br>
+                    &emsp;text += "This is loop number " + i + "<br />";
+                    }
+                    <br />
+                </p>
+
+
+                </p>
+                <h2>While Loops</h2>
+                <p>
+                    While loops are loops which repeat continuiosly while a condition is true. The elements of a While loop can be seen in the code block below.
+                </p>
+                <p class="code-block">
+                    while (condition) {<br />
+                    &emsp;Executable Code}<br />
+                </p>
+                <p>
+                    Below is an example of a While Loop which loops the number of times specified in the condition. In this condition, the while loop repeats continuously
+                    while it is true that i is less than 5. Each Time the code reaches the section designated i++, i increases by one, with the new value for i being stored outside the loop.
+                    It is then used for the next iteration of the loop until i < 5 is no longer true.
+                    As you can see, the while loop is defined rather differently to the For loop, with no increment value or initial value
+                    entered into the while condition.
+                </p>
+                <p class="code-block">
+                    var i = 0
+                    while (i < 5) {
+                    i++;
+                    }<br />
+                    <br />
+                </p>
+            </div>
+
+            <div class="learnermodule flex-container">
+                <h1>CONFIRMATION OF KNOWLEDGE</h1>
+                <p>How many times would the following block of code repeat?</p>
+                <p id="variableResult"></p>
+                <p class="code-block">
+                    var text = ""<br />
+                    var i;<br />
+                    for (i = 0; i < 10; i++) {<br>
+                    &emsp;text += "I like pie number " + i + "<br />";
+                    }
+                    <br />
+                    <input type="button" onclick="loopcorrect()" value="Click here to answer" />
+            </div>
+        </div>
     </section>
     <footer>
         <ul>
