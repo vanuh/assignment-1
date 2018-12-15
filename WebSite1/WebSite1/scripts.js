@@ -34,7 +34,6 @@ function getNumber() {
     }
 }
 
-
 /*Asks user for answer to question about combining conditions*/
 function combineVariable() {
     var userAnswer = prompt("What is needed in an if statement to require that two conditions are true before the block is run? ")
@@ -46,6 +45,7 @@ function combineVariable() {
     }
 }
 
+/*function to test users knowledge of condition statements*/
 function ifStatementQuestion() {
     var userAnswer = prompt("Type your answer here. Hint: Enter your answer as the section of code which will run")
     /*If user inputs "sing in the rain" then they are correct*/
@@ -56,10 +56,30 @@ function ifStatementQuestion() {
     }
 }
 
-//Variables learner module function//
+/*function to test users knowledge of string methods*/
+function sliceString() {
+    var userAnswer = prompt("Type your answer here.")
+    /* If user inputs Giraffe then answer is correct*/
+    if (userAnswer == "Giraffe") {
+        document.getElementById("sliceResult").innerHTML = "Congratulations! You are correct!"
+    } else {
+        document.getElementById("sliceResult").innerHTML = "Sorry that is not correct. Click to try again!"
+    }
+}
+
+/*function to test users knowledge of string methods*/
+function getGlobal() {
+    var userAnswer = prompt("Type your answer here.")
+    if (userAnswer == "/g") {
+        document.getElementById("globalResult").innerHTML = "Congratulations! You are correct!"
+    } else {
+        document.getElementById("globalResult").innerHTML = "Sorry that is not correct. Click to try again!"
+    }
+}
+    
+/*function to test users knowledge of loops */
 function loopcorrect() {
     var userAnswer = prompt("Write your answer in the following input box:")
-    /*Checks if the user has started their string with correct quotation marks*/
     if (userAnswer == "10") {
         document.getElementById("variableResult").innerHTML = "Congratulations! You are correct!"
     } else {
@@ -67,6 +87,7 @@ function loopcorrect() {
     }
 }
 
+/*function to display knowledge of loops and to test user understanding of loops*/
 function ForLoop() {
     var magicword = ["Abra", "Kadabra", "Alakazam"];
     var i = 0;
@@ -76,4 +97,15 @@ function ForLoop() {
         i++;
     }
     document.getElementById("Looper").innerHTML = text
+}
+
+/*function to test users knowledge of functions*/
+function localVarTest() {
+    var userAnswer = prompt("Type your answer here.")
+    if (userAnswer == "False") {
+        document.getElementById("localVarResult").innerHTML = "Congratulations! You are correct!"
+    } else {
+        document.getElementById("localVarResult").innerHTML = "Sorry that is not correct. Read over the section on local variables to ensure you understand this."
+    }
+
 }
