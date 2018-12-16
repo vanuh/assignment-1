@@ -1,0 +1,8 @@
+﻿External references used for information on this site.
+
+https://www.w3schools.com/
+https://stackoverflow.com/
+https://www.theodinproject.com/
+
+Also GitHub was used for collaboration
+https://github.com/vanuh/assignment-1
