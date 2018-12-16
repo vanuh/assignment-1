@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JavaScript 123! | Data Types</title>
+    <link rel="stylesheet" type="text/css" href="../Styles.css" />
+    <link rel="stylesheet" type="text/css" href="../Layout.css" />
+    <script src="../scripts.js"></script>
+</head>
+<body id="bg">
+
+    <!--Sets the header bar at the top of each page including navigation images-->
+    <header class="rcorner">
+        <img class="left rcorner" src="../Images/updated_logo.png" alt="Javascript image" width="150"
+             height="150" />
+        <div class="page-heading relative">
+            <h1>Data Types</h1>
+        </div>
+        <nav class="header-container">
+            <div>
+                <a href="../learning.html">
+                    <img src="../Images/study.png" alt="Learning" width="125" height="125" />
+                </a>
+            </div>
+            <div>
+                <a href="../about.html">
+                    <img src="../Images/target-of-audience.png" alt="About" width="125" height="125" />
+                </a>
+            </div>
+            <div>
+                <a href="../main.htm">
+                    <img src="../Images/website-home.png" alt="Home" width="125" height="125" />
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Sets the vertical navigation menu to give quick links to the different lesson pages -->
+    <nav class="vertical-menu rcorner">
+        <p>Quick Links</p>
+        <a href="../Learning_Modules/Variables.html">Variables</a>
+        <a href="../Learning_Modules/Data_types.html">Datatypes</a>
+        <a href="../Learning_Modules/Strings.html">Strings</a>
+        <a href="../Learning_Modules/Loops.html">Loops</a>
+        <a href="../Learning_Modules/Conditions.html">Conditions</a>
+        <a href="../Learning_Modules/Functions.html">Functions</a>
+    </nav>
+
+    <!--Section to include all learning material for data types-->
+    <section class="center">
+        <div class="flex-container learnermodule">
+
+            <div>
+                <h1>UNDERSTAND</h1>
+                <p>
+                    Following on from the lesson on variables we will look at the some different data types that can be held in variables. These can include numbers, strings, and booleans. Strings must be entered
+                    within quotation marks while numbers can be entered on their own. Boolean data types return a true or false value. Variables can contain one type of data and later contain another type of
+                    data depending on what is entered<br /><br />
+                </p>
+            </div>
+
+            <div>
+                <h1>LEARN</h1>
+                <h2>Numbers</h2>
+                <p>
+                    The number data type can be used to input numbers with or without decimals. Different mathematical operations can then be used on the numbers to manipulate them further.
+                    Numbers can also be written with scientific notation to make managing large numbers easier. Lets take a look at an example:
+                </p>
+                <p class="code-block">
+                    var intNum = 10; &emsp;// 10 without decimals<br /><br />
+                    var floatNum = 10.00; &emsp;// with decimals<br /><br />
+                    var hugeNum = 10e5; &emsp;// Returns 1000000<br /><br />
+                    var x = intNum * 5; &emsp;// Returns 50 in this case
+                </p>
+                <h2>Strings</h2>
+                <p>Strings must be entered using quotation marks and are used to store and manipulate text. You can use either single or double quotes.</p>
+                <p class="code-block">
+                    var doubleQuotes = "Hello world!" &emsp;// Hello world!<br /><br />
+                    var singleQuotes = 'Hello world!' &emsp;// Hello world!<br />
+                </p>
+                <h2>Booleans</h2>
+                <p>
+                    Booleans are variables that return a true or false value. True means that something is correct and false means it is incorrect. A variable can be set to a boolean or a comparison
+                    can be used to return a boolean.
+                </p>
+                <p class="code-block">
+                    var isTrue = true; &emsp;// True<br /><br />
+                    var lessThan = 5 &lt; 50 &emsp;// True (The comparison result is correct as 5 is smaller than 50)<br /><br />
+                    var isFalse = 5 > 50 &emsp;// False (The comparison result is incorrect as 5 is not larger than 50)
+                </p>
+            </div>
+
+            <div class="learnermodule flex-container">
+                <h1>CONFIRMATION OF KNOWLEDGE</h1>
+                <input type="button" onclick="getString()" value="Click here for the first test!" />
+                <p id="stringResult"></p>
+                <input type="button" onclick="getNumber()" value="Click here for the second test!" />
+                <p id="numberResult"></p>
+            </div>
+        </div>
+    </section>
+
+    <!--Adds footer to the page including contact us and copywright information-->
+    <footer>
+        <ul>
+            <li class="left"><a href="../About.html">Contact us</a></li>
+            <li class="right">V.M. Harfield</li>
+            <li class="right">G.D Cronin</li>
+            <li class="center">Made in Palmerston North &copy;</li>
+        </ul>
+    </footer>
+</body>
+</html>
